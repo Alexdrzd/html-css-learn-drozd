@@ -1,7 +1,6 @@
 body {
     width: 1280px;
     margin: 0 auto;
-    border: 3px solid red;
     box-sizing: border-box;
     font-family: arial;
     font-size: 16px;
@@ -140,9 +139,9 @@ body {
 }
 
 .dignity-list {
-    width: 540px;
+    width: 49%;
     margin: 0;
-    padding: 0 0 0 46px;
+    padding: 0;
     list-style-type: none;
     float: left;
 }
@@ -154,6 +153,9 @@ body {
 .dignity-list-item {
     margin: 0 0 40px 0;
     position: relative;
+    padding: 0 0 0 40px;
+box-sizing: border-box;
+
 }
 
 .dignity-list:nth-child(2)>.dignity-list-item:nth-child(3),
@@ -173,7 +175,7 @@ body {
     line-height: 32px;
     position: absolute;
     top: 0;
-    left: -46px;
+    left: 0;
 }
 
 .screenshots {
@@ -199,7 +201,18 @@ body {
     margin: 0 0 34px 0;
 }
 
-.screen-fig-wrp1 {
+.screen-fig-wrp {
+   width: 50%;
+    float: left;
+}
+
+.screen-fig-wrp:nth-child(2) {
+    float: right;
+}
+
+
+
+/*.screen-fig-wrp1 {
     width: 50%;
     float: left;
 }
@@ -208,7 +221,7 @@ body {
     margin: 0;
     width: 50%;
     float: right;
-}
+} */
 
 .screenshots-figure {
     margin: 0 0 20px 0;
@@ -366,7 +379,7 @@ body {
     width: 100%;
     margin: 0;
     text-align: center;
-    padding: 5px;
+    padding: 16px;
     box-sizing: border-box;
     font-size: 24px;
     line-height: 30px;
@@ -375,23 +388,25 @@ body {
 }
 
 .price-item-cost {
-    padding: 10px;
+    padding: 18px;
     margin: 0 0 10px 0;
     background-color: #fff;
     font-size: 40px;
     line-height: 30px;
     font-weight: 400;
     color: #445162;
+    box-sizing: border-box;
 }
 
 .price-item-list {
-    margin: 20px 20px;
-    padding: 0 0 0 7px;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 30px;
     list-style-position: inside;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     color: #ffffff;
+    box-sizing: border-box;
 }
 
 .price-item-btn {
@@ -402,14 +417,15 @@ body {
     color: #445161;
     text-transform: uppercase;
     display: block;
-    margin: 20px auto 20px auto;
-    padding: 5px 10px;
+    margin: 20px auto 0 auto;
+    padding: 10px;
     width: 260px;
     background-color: #fff;
     border: 1px solid #fff;
     border-radius: 5px;
     outline: none;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .price-item-btn:hover {
@@ -530,3 +546,95 @@ textarea[placeholder] {
     height: 300px;
     background-color: white;
 }
+
+.main-footer-contacts-link {
+  display: block;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 30px;
+  color: #ffffff;
+  position: relative;
+  font-size: 16px;
+  font-family: "arial";
+  line-height: 1.5;
+  text-align: left;
+}
+
+.main-footer-contacts-link:last-of-type {
+  margin: 0 0 32px 0;
+}
+
+.main-footer-contacts-link::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+
+.main-footer-contacts-link:nth-of-type(1):before {
+  
+  background-image: url(../img/skype_icon_319.png);
+}
+
+.main-footer-contacts-link:nth-of-type(2):before {
+  background-image: url(../img/icq_icon_324.png);
+}
+
+.main-footer-contacts-link:nth-of-type(3):before {
+  background-image: url(../img/email_icon_332.png);
+}
+
+.main-footer-contacts-link:nth-of-type(4):before {
+  background-image: url(../img/phone_icon_337.png);
+}
+
+
+.main-footer-contacts-icons {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  
+}
+
+.main-footer-contacts-net {
+  display: block;
+  width: 42px;
+  height: 42px;
+  box-sizing: border-box;
+  
+  background-image: url(../img/social.png);
+ margin: 3px;
+}
+
+.main-footer-contacts-net:nth-child(1){
+  background-position: -1px 0;
+  
+}
+.main-footer-contacts-net:nth-child(2){
+  background-position: 190px 0;
+}
+.main-footer-contacts-net:nth-child(3){
+  background-position: 141px 0;
+}
+.main-footer-contacts-net:nth-child(4){
+  background-position: 91px 0;
+}
+.main-footer-contacts-net:nth-child(5){
+  background-position: 42px 0;
+}
+
+
+
+
+
+
+
+
+
+
